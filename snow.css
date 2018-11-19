@@ -1,0 +1,22 @@
+.websnow_snow {
+    position: absolute;
+    color: white;
+    z-index: 1001;
+}
+
+.websnow_snowcontainer {
+    position: fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+}
+
+.webSnow_SnowImg{
+    height: 100%;
+    width: 100%;
+}

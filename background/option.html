@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ZeroMark Options</title>
+    <script type="module" src="./option.js"></script>
+    <script src="/thirdParty/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="/thirdParty/farbtastic/farbtastic.js"></script>
+    <script src="/snow.js"></script>
+    <script src="/snowControl.js"></script>
+    <script src="/content.js"></script>
+    <link rel="stylesheet" type="text/css" href="/thirdParty/farbtastic/farbtastic.css">
+    <link rel="stylesheet" type="text/css" href="./option.css">
+</head>
+
+<body>
+    <section class="configs">
+        <p>
+            <form>
+                雪花顏色<label>
+                    <input type="text" id="snowColor" name="snowColor" value="#ffffff" />
+                </label>
+            </form>
+            <div id="snowColor_colorpicker"></div>
+        </p><br>
+        <p>雪花數量
+            <label>
+                <input type="number" name="snowCount" min="0">
+            </label>
+        </p>
+        <p>雪花最大大小
+            <label>
+                <input type="number" name="snowSizeMax" min="0">
+            </label>
+        </p>
+        <p>雪花最大掉落速度
+            <label>
+                <input type="number" name="snowYMaxSpeed" min="0">
+            </label>
+        </p>
+        <p>雪花最低掉落速度
+            <label>
+                <input type="number" name="snowYMinSpeed" min="0">
+            </label>
+        </p>
+        <p>雪花最大水平移動速度
+            <label>
+                <input type="number" name="snowXMaxSpeed" min="0">
+            </label>
+        </p><br>
+        <p>
+            <form>設定頁面背景顏色
+                <label>
+                    <input type="text" id="optionPageBackGroundColor" name="optionPageBackGroundColor" value="#000000" />
+                </label>
+            </form>
+            <div id="optionPageBackGroundColor_colorpicker"></div>
+        </p><br>
+        <p>
+            <label>
+                <button id="save">套用</button>
+            </label>
+            　　　　
+            <label>
+                <button id="defaultSetting">還原為預設</button>
+            </label>
+        </p>
+
+    </section>
+    <p>
+        <label>
+            <button id="testSnow">隱藏所有設定項，並下雪</button>
+        </label>
+    </p>
+</body>
+
+</html>
